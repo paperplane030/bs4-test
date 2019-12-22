@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- noto字型 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500&display=swap&subset=chinese-traditional" rel="stylesheet">
+    <!-- 載入css -->
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        * {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+    </style>
+    <title>購物網站練習-index</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #b40000; color:#00CC99;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ml-2" href="landing_page.html">
+            <i class="fas fa-paper-plane"></i> 紙飛機商場
+        </a>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="shopping_index.html">首頁 <span
+                        class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="shopping_product.html">商品介紹</a>
+                <a class="nav-item nav-link" href="shopping_checkout.html">結帳頁面</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button href="#" class="btn text-white btn-cart d-flex align-items-auto nav-cart-btn" data-toggle="dropdown">
+                <span class="d-none d-sm-inline-block mr-1">購物車</span>
+                <i class="fas fa-shopping-cart" style="font-size: 32px;"></i>
+                <span class="badge badge-pill badge-success text-monospace btn-cart-badge"
+                    style="font-size: 14px;">10</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width:350px;">
+                <div class="px-3 pt-3">
+                    <h6>已選購商品</h6>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="" class="text-secondary" data-title="薩爾達傳說" data-backdrop="static" data-toggle="modal" data-target="#removeModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">薩爾達傳說</td>
+                                <td>1件</td>
+                                <td>$2,090</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="text-secondary" data-title="異界鎖鏈" "
+                                    data-backdrop="static" data-toggle="modal" data-target="#removeModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td>異界鎖鏈</td>
+                                <td>1件</td>
+                                <td>$1,790</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="btn btn-primary btn-block ">結帳去</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-jumbotron d-flex align-items-end">
+        <div class="container ">
+            <div class="description-bg p-3 ">
+                <h1>玩到手抽筋 ! 先訂一盒痠痛藥布 !</h1>
+                <!-- 自訂p段落自帶mb -->
+                <p class="mb-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequuntur sed laudantium aliquid molestiae pariatur est asperiores reiciendis saepe velit.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 ">
+                <div class="list-group sticky-top mb-3 " style="top:20px; ">
+                    <a href="#recommend" class="list-group-item list-group-item-action active" data-toggle="list"
+                        role="tab">
+                        <i class="fas fa-thumbs-up "></i>
+                        站長推薦
+                    </a>
+                    <a href="#new_arrival" class="list-group-item list-group-item-action" data-toggle="list" role="tab">
+                        <i class="far fa-calendar-alt "></i>
+                        最新發售
+                    </a>
+                    <a href="# " class="list-group-item list-group-item-action disabled">
+                        <i class="fab fa-hotjar "></i>
+                        最高人氣
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9 ">
+
+                <div class="tab-content ">
+                    <!-- 產品列表分頁---------------------------------------站長推薦第一頁-->
+                    <div class="tab-pane active" id="recommend">
+                        <div class="row ">
+                            <!-- 利用grid順便排版searchbar，也能夠符合響應式 -->
+                            <div class="col-md-9 ">
+                                <div class="input-group mb-3 ">
+                                    <input type="text " class="form-control " placeholder="Search... "
+                                        aria-label="SearchBar " aria-describedby="SearchBar ">
+                                    <div class="input-group-append ">
+                                        <button class="btn btn-outline-warning " type="button "
+                                            id="button-addon2 ">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0 ">
+                                    <img src="https://target.scene7.com/is/image/Target/GUEST_e97f4ca6-9e20-4e34-ae64-1ac42d0d394c?wid=488&hei=488&fmt=pjpeg "
+                                        class="card-img-top " alt="zelda_image ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">薩爾達傳說<br>曠野之息</h5>
+                                        <p class="card-text ">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white ">
+                                        <a href="#" class="btn btn-danger btn-block disabled">售完！補貨中</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0">
+                                    <img src="https://image.smythstoys.com/original/desktop/168112.jpg "
+                                        class="card-img-top " alt="Minecraft_image ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">Minecraft</h5>
+                                        <p class="card-text ">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white ">
+                                        <a href=" " class="btn btn-primary btn-block ">購買去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0 ">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3dftERQuDyMFWErc6p3_RFtZC__fQlR-yj2TH3F1bLgl21AEr&s "
+                                        class="card-img-top " alt="zelda_image ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">薩爾達傳說<br>織夢島</h5>
+                                        <p class="card-text ">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white ">
+                                        <a href=" " class="btn btn-primary btn-block ">購買去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0 ">
+                                    <img src="https://image.smythstoys.com/original/desktop/172765.jpg "
+                                        class="card-img-top " alt="astral_chain_image ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title ">異界鎖鏈</h5>
+                                        <p class="card-text ">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white ">
+                                        <a href=" " class="btn btn-primary btn-block ">購買去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0 ">
+                                    <img src="https://image.smythstoys.com/original/desktop/179228.jpg "
+                                        class="card-img-top " alt="Luigi 's_Mansion_3_image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">路易吉洋樓3</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="" class="btn btn-danger btn-block disabled">售完！補貨中</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0">
+                                    <img src="https://www.itsfun.com.tw/images/5f/b7/nBnaucTYjF2YxEzYhhTYyYTN1QTMwQ3Lt92Yuc2cthWcuw2cz5SMw9yL6MHc0RHa.jpg"
+                                        class="card-img-top" alt="zSalonpas">
+                                    <div class="card-body">
+                                        <h5 class="card-title">撒隆巴斯</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="" class="btn btn-primary btn-block">購買去</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination d-flex justify-content-center mt-4">
+                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item active"><a class="page-link" data-toggle="list"
+                                        href="#recommend">1</a></li>
+                                <li class="page-item"><a class="page-link" data-toggle="list" href="#recommend-2">2</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <!-- 產品列表分頁---------------------------------------站長推薦第二頁-->
+                    <div class="tab-pane" id="recommend-2">
+                        <div class="row">
+                            <!-- 利用grid順便排版searchbar，也能夠符合響應式 -->
+                            <div class="col-md-9">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Search..."
+                                        aria-label="SearchBar" aria-describedby="SearchBar">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-warning" type="button"
+                                            id="button-addon2">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0">
+                                    <img src="https://www.itsfun.com.tw/images/5f/b7/nBnaucTYjF2YxEzYhhTYyYTN1QTMwQ3Lt92Yuc2cthWcuw2cz5SMw9yL6MHc0RHa.jpg"
+                                        class="card-img-top" alt="zSalonpas">
+                                    <div class="card-body">
+                                        <h5 class="card-title">撒隆巴斯</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="" class="btn btn-primary btn-block">購買去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0">
+                                    <img src="https://image.smythstoys.com/original/desktop/172765.jpg"
+                                        class="card-img-top" alt="astral_chain_image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">異界鎖鏈</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="" class="btn btn-primary btn-block">購買去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0">
+                                    <img src="https://image.smythstoys.com/original/desktop/168112.jpg"
+                                        class="card-img-top" alt="Minecraft_image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Minecraft</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="" class="btn btn-primary btn-block">購買去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3dftERQuDyMFWErc6p3_RFtZC__fQlR-yj2TH3F1bLgl21AEr&s"
+                                        class="card-img-top" alt="zelda_image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">薩爾達傳說<br>織夢島</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="" class="btn btn-primary btn-block">購買去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0">
+                                    <img src="https://target.scene7.com/is/image/Target/GUEST_e97f4ca6-9e20-4e34-ae64-1ac42d0d394c?wid=488&hei=488&fmt=pjpeg"
+                                        class="card-img-top" alt="zelda_image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">薩爾達傳說<br>曠野之息</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="" class="btn btn-danger btn-block disabled">售完！補貨中</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination d-flex justify-content-center mt-4">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" data-toggle="list" href="#recommend">1</a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" data-toggle="list"
+                                        href="#recommend-2">2</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <!-- 產品列表分頁---------------------------------------最新發售第一頁-->
+                    <div class="tab-pane" id="new_arrival">
+                        <div class="row">
+                            <!-- 利用grid順便排版searchbar，也能夠符合響應式 -->
+                            <div class="col-md-9">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Search..."
+                                        aria-label="SearchBar" aria-describedby="SearchBar">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-warning" type="button"
+                                            id="button-addon2">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0">
+                                    <img src="https://image.smythstoys.com/original/desktop/172948.jpg"
+                                        class="card-img-top" alt="zelda_image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">精靈寶可夢<br>《劍》</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="" class="btn btn-danger btn-block disabled">售完！補貨中</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0">
+                                    <img src="https://image.smythstoys.com/original/desktop/172949.jpg"
+                                        class="card-img-top" alt="zelda_image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">精靈寶可夢<br>《盾》</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="" class="btn btn-danger btn-block disabled">售完！補貨中</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0">
+                                    <img src="https://image.smythstoys.com/original/desktop/179619.jpg"
+                                        class="card-img-top" alt="zelda_image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">舞力全開<br>2020</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="" class="btn btn-primary btn-block">購買去</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination d-flex justify-content-center mt-4">
+                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-5">
+        <div class="container-fluid text-center">
+            <div>
+                <span class="text-secondary">© Copright 2019 購物網站練習</span>
+                <a href="" class="mx-2"><i class="fab fa-github mr-1"></i>GitHub</a>
+                <a href="" class="mr-2"><i class="fab fa-facebook mr-1"></i>Facebook</a>
+                <a href=""><i class="fas fa-info-circle mr-1"></i>About</a>
+            </div>
+            <small class="text-secondary">Made with Bootstrap4</small>
+        </div>
+    </footer>
+
+    <!-- removeModal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="editodalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    是否確認刪除訂單？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary px-4" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-outline-danger px-5">是</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    
+    <!-- modal使用的JS -->
+    <script>
+        $(document).ready(function () {
+            $('#removeModal ').on('show.bs.modal', function (event) {
+                var btn = $(event.relatedTarget);
+                var title = btn.data('title');
+
+                var modal = $(this);
+                modal.find(".modal-title").text("確認刪除 : " + title + " 的訂單 ？");
+            })
+
+
+        });
+    </script>
+
+</body>
+
+</html>
