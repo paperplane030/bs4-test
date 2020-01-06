@@ -1,8 +1,11 @@
 p {
     font-size: 16px;
 }
+
+
 /* landing_page */
-.bg-jumbotron-for-landing-page{
+
+.bg-jumbotron-for-landing-page {
     background-image: url(https://wallpaperaccess.com/full/236571.jpg);
     background-size: cover;
     background-position: center center;
@@ -10,11 +13,11 @@ p {
     opacity: .75;
 }
 
-.landing-page-banner{
+.landing-page-banner {
     position: relative;
 }
 
-.landing-page-banner h1{
+.landing-page-banner h1 {
     position: absolute;
     top: 10%;
     left: 10%;
@@ -22,13 +25,161 @@ p {
     -webkit-text-stroke: 2px #333;
 }
 
+
+/* .star-img {
+    margin-bottom: -20px;
+} */
+
+.star {
+    position: relative;
+    margin-bottom: -30px;
+    z-index: 1;
+}
+
+
+/* .fas.fa-star {
+    color: #FFFC31;
+    text-shadow: 3px 6px #272634;
+} */
+
+.star-card {
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .32);
+    transform: translateY(0px);
+    transition: .5s;
+}
+
+.star-card .card-body {
+    border-radius: 10px;
+}
+
+.star-card:hover {
+    transform: translateY(-30px);
+    box-shadow: -5px -5px 5px rgba(255, 252, 49, .5);
+    /* box-shadow: 0px 3px 10px rgba(244, 247, 93, 0.822); */
+}
+
+.section-product-content {
+    /* background-color: rgba(180, 0, 0, .7); */
+    /* background-image: linear-gradient(to right, #868f96 0%, #596164 100%); */
+    background-image: url(../img/product.jpg);
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.section-product-content .card {
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 0;
+    min-height: 268px;
+}
+
+.section-product-content .left-top-1 {
+    background-image: url(../img/amiibo.jpg);
+    background-position: top center;
+    /* min-height: 268px; */
+}
+
+.section-product-content .left-top-1:hover::before {
+    content: 'Amiibo';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 268px;
+    cursor: pointer;
+}
+
+.section-product-content .left-top-2 {
+    background-image: url(../img/equipment.jpg);
+}
+
+.section-product-content .left-top-2:hover::before {
+    content: '周邊配備';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 268px;
+    cursor: pointer;
+}
+
+.section-product-content .left-bottom {
+    background-image: url(../img/free-delivery.jpg);
+    /* min-height: 268px; */
+}
+
+.section-product-content .left-bottom:hover::before {
+    content: '全台免運費';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 268px;
+    cursor: pointer;
+}
+
+.section-product-content .right {
+    background-image: url(../img/games_collection.jpg);
+}
+
+.section-product-content .right:hover::before {
+    content: '超過1000款遊戲';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 536px;
+    cursor: pointer;
+}
+
 @media (max-width: 767px) {
-    .landing-page-banner h1{
+    .section-product-content .card {
+        margin-top: 10px;
+    }
+    .section-product-content .right:hover::before {
+        line-height: 268px;
+    }
+}
+
+.subscribe .subscribe-img {
+    min-height: 300px;
+    background-image: url(../img/email.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.subscribe .subscribe-text label {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/* .star-card:hover .card-body {
+    background-image: linear-gradient(0deg, #FB8076, #FEB85D);
+} */
+
+@media (max-width: 767px) {
+    .landing-page-banner h1 {
         font-size: 1.2rem;
         -webkit-text-stroke: 0px;
         color: #333;
     }
 }
+
 
 /* shopping_index */
 
@@ -66,6 +217,8 @@ p {
 .card-shadow:hover {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, .32);
 }
+
+
 /* 
 .pagination-style .list-group-item {
     padding: .5rem 1rem;
@@ -110,4 +263,3 @@ p {
 .alert-rounded {
     border-radius: 50px;
 }
-

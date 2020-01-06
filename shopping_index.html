@@ -19,7 +19,7 @@
             font-family: 'Noto Sans TC', sans-serif;
         }
     </style>
-    <title>購物網站練習-index</title>
+    <title>購物網站-index</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
         <a class="navbar-brand ml-2" href="landing_page.html">
             <i class="fas fa-paper-plane"></i> 紙飛機商場
         </a>
-        
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="shopping_index.html">首頁 <span
@@ -64,8 +64,8 @@
                             <tr>
                                 <td>
                                     <a href="#" class="text-secondary" data-title="異界鎖鏈" "
-                                    data-backdrop="static" data-toggle="modal" data-target="#removeModal">
-                                        <i class="fas fa-trash-alt"></i>
+                                    data-backdrop="static " data-toggle="modal " data-target="#removeModal ">
+                                        <i class="fas fa-trash-alt "></i>
                                     </a>
                                 </td>
                                 <td>異界鎖鏈</td>
@@ -74,13 +74,13 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="#" class="btn btn-primary btn-block ">結帳去</a>
+                    <a href="# " class="btn btn-primary btn-block ">結帳去</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid bg-jumbotron d-flex align-items-end">
+    <div class="jumbotron jumbotron-fluid bg-jumbotron d-flex align-items-end ">
         <div class="container ">
             <div class="description-bg p-3 ">
                 <h1>玩到手抽筋 ! 先訂一盒痠痛藥布 !</h1>
@@ -91,20 +91,20 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
+    <div class="container ">
+        <div class="row ">
             <div class="col-md-3 ">
                 <div class="list-group sticky-top mb-3 " style="top:20px; ">
-                    <a href="#recommend" class="list-group-item list-group-item-action active" data-toggle="list"
-                        role="tab">
+                    <a href="#recommend " class="list-group-item list-group-item-action active " data-toggle="list "
+                        role="tab ">
                         <i class="fas fa-thumbs-up "></i>
                         站長推薦
                     </a>
-                    <a href="#new_arrival" class="list-group-item list-group-item-action" data-toggle="list" role="tab">
+                    <a href="#new_arrival " class="list-group-item list-group-item-action " data-toggle="list " role="tab ">
                         <i class="far fa-calendar-alt "></i>
                         最新發售
                     </a>
-                    <a href="# " class="list-group-item list-group-item-action disabled">
+                    <a href="# " class="list-group-item list-group-item-action disabled ">
                         <i class="fab fa-hotjar "></i>
                         最高人氣
                     </a>
@@ -114,7 +114,7 @@
 
                 <div class="tab-content ">
                     <!-- 產品列表分頁---------------------------------------站長推薦第一頁-->
-                    <div class="tab-pane active" id="recommend">
+                    <div class="tab-pane active " id="recommend ">
                         <div class="row ">
                             <!-- 利用grid順便排版searchbar，也能夠符合響應式 -->
                             <div class="col-md-9 ">
@@ -138,12 +138,12 @@
                                             lead-in to additional content. This content is a little bit longer.</p>
                                     </div>
                                     <div class="card-footer border-top-0 bg-white ">
-                                        <a href="#" class="btn btn-danger btn-block disabled">售完！補貨中</a>
+                                        <a href="# " class="btn btn-danger btn-block disabled ">售完！補貨中</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4 mb-3 ">
-                                <div class="card card-shadow text-center h-100 pt-1 border-0">
+                                <div class="card card-shadow text-center h-100 pt-1 border-0 ">
                                     <img src="https://image.smythstoys.com/original/desktop/168112.jpg "
                                         class="card-img-top " alt="Minecraft_image ">
                                     <div class="card-body ">
@@ -417,7 +417,7 @@
     <footer class="bg-light py-5">
         <div class="container-fluid text-center">
             <div>
-                <span class="text-secondary">© Copright 2019 購物網站練習</span>
+                <span class="text-secondary">© Copright 2019 購物網站</span>
                 <a href="" class="mx-2"><i class="fab fa-github mr-1"></i>GitHub</a>
                 <a href="" class="mr-2"><i class="fab fa-facebook mr-1"></i>Facebook</a>
                 <a href=""><i class="fas fa-info-circle mr-1"></i>About</a>
@@ -463,9 +463,9 @@
     <!-- modal使用的JS -->
     <script>
         $(document).ready(function () {
-            $('#removeModal ').on('show.bs.modal', function (event) {
+            $('#removeModal ').on('show.bs.modal ', function (event) {
                 var btn = $(event.relatedTarget);
-                var title = btn.data('title');
+                var title = btn.data('title ');
 
                 var modal = $(this);
                 modal.find(".modal-title").text("確認刪除 : " + title + " 的訂單 ？");

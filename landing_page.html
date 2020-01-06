@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- noto字型 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500&display=swap&subset=chinese-traditional" rel="stylesheet">
+    <!-- 載入css -->
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        * {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+    </style>
+    <title>購物網站-LandingPage</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #b40000; color:#00CC99;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ml-2" href="landing_page.html">
+            <i class="fas fa-paper-plane"></i> 紙飛機商場
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="shopping_index.html">首頁</span></a>
+                <a class="nav-item nav-link" href="shopping_product.html">商品介紹</a>
+                <a class="nav-item nav-link" href="shopping_checkout.html">結帳頁面</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button href="#" class="btn text-white btn-cart d-flex align-items-auto nav-cart-btn" data-toggle="dropdown">
+                <span class="d-none d-sm-inline-block mr-1">購物車</span>
+                <i class="fas fa-shopping-cart" style="font-size: 32px;"></i>
+                <span class="badge badge-pill badge-success text-monospace btn-cart-badge"
+                    style="font-size: 14px;">10</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width:350px;">
+                <div class="px-3 pt-3">
+                    <h6>已選購商品</h6>
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="" class="text-secondary" data-title="薩爾達傳說" data-backdrop="static" data-toggle="modal" data-target="#removeModal">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">薩爾達傳說</td>
+                                <td>1件</td>
+                                <td>$2,090</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="text-secondary" data-title="異界鎖鏈" "
+                                    data-backdrop="static " data-toggle="modal " data-target="#removeModal ">
+                                        <i class="fas fa-trash-alt "></i>
+                                    </a>
+                                </td>
+                                <td>異界鎖鏈</td>
+                                <td>1件</td>
+                                <td>$1,790</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="# " class="btn btn-primary btn-block ">結帳去</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-jumbotron-for-landing-page d-flex align-items-end ">
+        <div class="container landing-page-banner ">
+            <img src="https://i.pinimg.com/originals/86/66/ed/8666edd679ebab3d776d7d77583ca737.png " alt="switch " class="w-100 ">
+            <h1>歡迎來到紙飛機商場 ！</h1>
+        </div>
+    </div>
+
+    <div class="container ">
+        <h2 class='text-center mb-3'>明星商品</h2>
+        <div class="row ">
+            <div class="col-md-3 col-6 mb-3 ">
+                <div class="star text-center ">
+                    <img src="./img/star.png " alt="star " class="w-50 star-img ">
+                    <!-- <i class="fas fa-star fa-3x "></i> -->
+                </div>                
+                <div class="card star-card text-center pt-1 border-0 ">
+                    <img src="https://target.scene7.com/is/image/Target/GUEST_e97f4ca6-9e20-4e34-ae64-1ac42d0d394c?wid=488&hei=488&fmt=pjpeg "
+                        class="card-img-top " alt="zelda_image ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">薩爾達傳說<br>曠野之息</h5>
+                        <p class="card-text ">This is a wider card with supporting text below as a
+                            natural
+                            lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-3 ">
+                <div class="star text-center ">
+                    <img src="./img/star.png " alt="star " class="w-50 star-img ">
+                    <!-- <i class="fas fa-star fa-3x "></i> -->
+                </div> 
+                    <div class="card star-card text-center pt-1 border-0 " >
+                        <img src="https://image.smythstoys.com/original/desktop/172765.jpg "
+                            class="card-img-top " alt="astral_chain_image ">
+                        <div class="card-body " style="margin-bottom:30px; ">
+                            <h5 class="card-title ">異界鎖鏈</h5>
+                            <p class="card-text ">This is a wider card with supporting text below as a
+                                natural
+                                lead-in to additional content. This content is a little bit longer.</p>
+                        </div>                        
+                    </div>                
+            </div>
+            <div class="col-md-3 col-6 mb-3 ">
+                <div class="star text-center ">
+                    <img src="./img/star.png " alt="star " class="w-50 star-img ">
+                    <!-- <i class="fas fa-star fa-3x "></i> -->
+                </div>   
+                    <div class="card star-card text-center pt-1 border-0 ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3dftERQuDyMFWErc6p3_RFtZC__fQlR-yj2TH3F1bLgl21AEr&s "
+                            class="card-img-top " alt="zelda_image ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">薩爾達傳說<br>織夢島</h5>
+                            <p class="card-text ">This is a wider card with supporting text below as a
+                                natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>                        
+                    </div>                
+            </div>
+            <div class="col-md-3 col-6 mb-3 ">
+                <div class="star text-center ">
+                    <img src="./img/star.png " alt="star " class="w-50 star-img ">
+                    <!-- <i class="fas fa-star fa-3x "></i> -->
+                </div>   
+                <div class="card star-card text-center pt-1 border-0 ">
+                    <img src="https://image.smythstoys.com/original/desktop/172948.jpg "
+                        class="card-img-top " alt="zelda_image ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">精靈寶可夢<br>《劍》</h5>
+                        <p class="card-text ">This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-5 col-6 mx-auto mt-4 ">
+                <a href="# " class="btn btn-success btn-block ">點此手刀前往購買</a>
+            </div>
+				</div>				
+		</div>
+		<div class="section-product-content pb-4 ">
+			<h2 class='text-center pt-3 mt-3 text-white'>產品內容</h2>
+			<div class="container ">
+				<div class="row mt-4 no-gutters ">
+					<div class="col-md-6 ">
+							<div class="row no-gutters ">
+									<div class="col-md-6 ">
+											<div class="card left-top-1 border-0 ">
+													<div class="card-body ">													
+													</div>
+											</div>
+									</div>
+									<div class="col-md-6 ">
+											<div class="card left-top-2 border-0 ">
+													<div class="card-body ">									
+													</div>
+												</div>
+									</div>
+							</div>
+							<div class="card left-bottom border-0 " >
+									<div class="card-body ">									
+									</div>
+							</div>
+					</div>
+					<div class="col-md-6 ">
+							<div class="card h-100 right border-0 ">
+									<div class="card-body ">									
+									</div>
+							</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+
+		
+
+        <footer class="bg-light py-3 ">
+            <div class="container-fluid text-center ">
+							<div class="subscribe my-3 ">
+								<div class="container ">
+									<div class="row ">
+										<div class="col ">
+											<div class="subscribe-img d-flex align-items-end ">
+												<div class="subscribe-text text-white mx-auto mb-4 ">
+													<form class="form-inline ">				
+														<label for="inlineFormEmail ">訂閱以獲得優惠通知：</label>
+														<div class="input-group mb-2 mr-sm-2 ">										
+															<input type="text " class="form-control " id="inlineFormEmail " placeholder="Email ">
+														</div>																					
+														<button type="submit " class="btn btn-primary mb-2 ">Subscribe</button>
+													</form>								
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                <div class="mt-5 ">
+                    <span class="text-secondary ">© Copright 2019 購物網站</span>
+                    <a href=" " class="mx-2 "><i class="fab fa-github mr-1 "></i>GitHub</a>
+                    <a href=" " class="mr-2 "><i class="fab fa-facebook mr-1 "></i>Facebook</a>
+                    <a href=" "><i class="fas fa-info-circle mr-1 "></i>About</a>
+                </div>
+                <small class="text-secondary ">Made with Bootstrap4</small>
+            </div>
+        </footer>
+
+        <!-- removeModal -->
+        <div class="modal fade " id="removeModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+            <div class="modal-dialog " role="document ">
+                <div class="modal-content ">
+                    <div class="modal-header bg-danger text-white ">
+                        <h5 class="modal-title " id="editodalLabel ">Modal title</h5>
+                        <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                        <span aria-hidden="true ">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body ">
+                        是否確認刪除訂單？
+                    </div>
+                    <div class="modal-footer ">
+                        <button type="button " class="btn btn-secondary px-4 " data-dismiss="modal ">取消</button>
+                        <button type="button " class="btn btn-outline-danger px-5 ">是</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+
+        <!-- modal使用的JS -->
+        <script>
+            $(document).ready(function() {
+                $('#removeModal ').on('show.bs.modal', function(event) {
+                    var btn = $(event.relatedTarget);
+                    var title = btn.data('title');
+
+                    var modal = $(this);
+                    modal.find(".modal-title ").text("確認刪除 : " + title + " 的訂單 ？ ");
+                })
+
+
+            });
+        </script>
+
+</body>
+
+</html>
